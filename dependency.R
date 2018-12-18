@@ -1,9 +1,11 @@
-if (!require(shiny)){install.packages("shiny")}
-if (!require(udpipe)){install.packages("udpipe")}
-if (!require(qqgraph)){install.packages("qqgraph")}
-if (!require(ggplot2)){install.packages("ggplot2")}
-if (!require(igraph)){install.packages("igraph")}
-if (!require(ggraph)){install.packages("ggraph")}
-if (!require(wordcloud)){install.packages("wordcloud")}
-if (!require(dplyr)){install.packages("dplyr")}
-if (!require(stringr)){install.packages("stringr")}
+try(require(shiny)||install.packages("shiny"))
+try(require(udpipe)||install.packages("udpipe"))
+try(require(qqgraph)||install.packages("qqgraph"))
+try(require(ggplot2)||install.packages("ggplot2"))
+try(require(igraph)||install.packages("igraph"))
+try(require(ggraph)||install.packages("ggraph"))
+try(require(wordcloud)||install.packages("wordcloud"))
+try(require(dplyr)||install.packages("dplyr"))
+try(require(stringr)||install.packages("stringr"))
+
+
