@@ -37,7 +37,7 @@ shinyUI(
                                h4(p("Data input")),
                                p("This app supports only .txt data file",align="justify"),
                                p("Please refer to the link below for sample csv file."),
-                               a(href="https://github.com/sudhir-voleti/sample-data-sets/blob/master/Segmentation%20Discriminant%20and%20targeting%20data/ConneCtorPDASegmentation.csv"
+                               a(href="https://github.com/nikhilbhasincba/TABA/blob/master/nokia.txt"
                                  ,"Sample data input file"),   
                                br(),
                                h4('How to use this App'),
@@ -59,6 +59,3 @@ shinyUI(
             ) # end of sidebarLayout
               )  # end if fluidPage
                 ) # end of UI
-  
-
-
