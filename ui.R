@@ -8,7 +8,7 @@ library("shiny")
 shinyUI(
   fluidPage(
   
-    titlePanel("co-occurrences plot"),
+    titlePanel("My First Shiny"),
   
     sidebarLayout( 
       
