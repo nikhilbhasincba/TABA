@@ -9,4 +9,4 @@ try(require(dplyr)||install.packages("dplyr"))
 try(require(stringr)||install.packages("stringr"))
 
 
-library("qqgraph")
+library("qgraph")
