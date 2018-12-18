@@ -7,6 +7,3 @@ try(require(ggraph)||install.packages("ggraph"))
 try(require(wordcloud)||install.packages("wordcloud"))
 try(require(dplyr)||install.packages("dplyr"))
 try(require(stringr)||install.packages("stringr"))
-
-
-library("qgraph")
