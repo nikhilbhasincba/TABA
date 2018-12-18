@@ -1,0 +1,9 @@
+if (!require(shiny)){install.packages("shiny")}
+if (!require(udpipe)){install.packages("udpipe")}
+if (!require(qqgraph)){install.packages("qqgraph")}
+if (!require(ggplot2)){install.packages("ggplot2")}
+if (!require(igraph)){install.packages("igraph")}
+if (!require(ggraph)){install.packages("ggraph")}
+if (!require(wordcloud)){install.packages("wordcloud")}
+if (!require(dplyr)){install.packages("dplyr")}
+if (!require(stringr)){install.packages("stringr")}
