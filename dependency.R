@@ -1,6 +1,6 @@
 try(require(shiny)||install.packages("shiny"))
 try(require(udpipe)||install.packages("udpipe"))
-try(require(qqgraph)||install.packages("qqgraph"))
+try(require(qgraph)||install.packages("qgraph"))
 try(require(ggplot2)||install.packages("ggplot2"))
 try(require(igraph)||install.packages("igraph"))
 try(require(ggraph)||install.packages("ggraph"))
