@@ -7,8 +7,7 @@ shinyServer(function(input, output) {      ###default input
                       if (is.null(input$file1)) {   
       
                                  return(NULL) } else{
-      
-                                          Data <- readLines(input$file1$datapath)
+                                          Data <- readLines(input$file1$datapath,encoding = 'UTF-8')
                                           Data  =  str_replace_all(Data, "<.*?>", "")
                                           return(Data)
   
@@ -20,7 +19,7 @@ shinyServer(function(input, output) {      ###default input
                        if (is.null(input$file2)) {   
       
                                    return(NULL) } else{
-        
+                                              
                                               model = udpipe_load_model(input$file2$datapath)
                                               return(model)
         
