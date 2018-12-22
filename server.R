@@ -52,7 +52,7 @@ output$cooc = renderPlot({
                                                 
                                                   ggraph(wordnetwork, layout = "fr") +  
                                                         geom_edge_link(aes(width = cooc, edge_alpha = cooc), edge_colour = "orange") +  
-                                                        geom_node_text(aes(label = name), col = c("darkgreen,blue","red","yellow","pink"), size = 6) +
+                                                        geom_node_text(aes(label = name), col = "darkblue", size = 6) +
                                                         theme_graph(base_family = "Arial") +  
                                                         theme(legend.position = "centre") +
                                                         labs(title = "Cooccurrences plot") 
