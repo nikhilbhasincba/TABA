@@ -45,18 +45,18 @@ output$plot1 = renderDataTable({
 
 output$cooc = renderPlot({
                           all_cooc =  cooccurrence(
-                          
+
                                                     x = subset(annotat1(), xpos %in% input$check),term = "lemma",group = c("paragraph_id", "sentence_id"))
-                                                    wordnetwork <- head(all_cooc,100)
-                                                    wordnetwork <- igraph::graph_from_data_frame(wordnetwork) 
+                                                    wordnetwork <- head(all_cooc,20)
+                                                    wordnetwork <- igraph::graph_from_data_frame(wordnetwork)
                                                 
-                                                  ggraph(wordnetwork, layout = "fr") +  
-                                                        geom_edge_link(aes(width = cooc, edge_alpha = cooc), edge_colour = "orange") +  
-                                                        geom_node_text(aes(label = name), col = "darkblue", size = 6) +
-                                                        theme_graph(base_family = "Arial") +  
+                                                  ggraph(wordnetwork, layout = "fr") +
+                                                        geom_edge_link(aes(width = cooc, edge_alpha = cooc), edge_colour = "orange") +
+                                                        geom_node_text(aes(label = name), col = "darkblue", size = 10) +
+                                                        theme_graph(base_family = "Arial") +
                                                         theme(legend.position = "centre") +
-                                                        labs(title = "Cooccurrences plot") 
-            
+                                                        labs(title = "Cooccurrences plot")
+                                                
                         })
   
 })
